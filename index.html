@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>2048 and Snake</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+    <link href="style/master.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+
+      <div class="restart-container">
+        <a href="#" class="square_btn" onclick="restartGame(); return false;">RESTART</a>
+      </div>
+    </div>
+    <h1 class="score-header" >Score: <span id="score"></span></h1>
+    <h3 class="score-header" >High Score: <span id="hiscore"></span></h1>
+  <div class="container" id="canvas-container">
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <canvas id="canvas2" width="500" height="500"></canvas>
+  </div>
+    <script src="animation/elements.js"></script>
+    <script src="vars.js"></script>
+
+    <script src="animation/math/math.js"></script>
+    <script src="animation/math/vector.js"></script>
+    <script src="animation/draw.js"></script>
+    <script src="animation/keys.js"></script>
+    <script src="function.js"></script>
+    <script src='movements.js'></script>
+    <script src='snake.js'></script>
+    <script src="animate.js"></script>
+
+
+  </body>
+</html>
